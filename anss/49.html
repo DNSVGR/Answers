@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>ans</title>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>Файлы в С. Способы обмена. Файловый тип. Описание файлов.
+        <pre>
+                Файл в программе на языке С – это переменная–указатель на тип FILE, называемая файловой переменной. 
+
+                stdio.h
+                File control structure for streams.
+                
+                  typedef struct {
+                    short          level;                         /* флаг состояния – буфер пуст (полон) */
+                    unsigned       flags;                     /* флаг состояния файла                           */
+                    char           fd;                             /*префикс файла                                        */
+                    unsigned char  hold;                   /* непереданный символ                          */
+                    short          bsize;                        /* размер внутреннего буфера                 */      
+                    unsigned char *buffer;               /* значение указателя для доступа внутри    буфера: задает начало буфера, начало строки или текущее значение указателя внутри буфера в зависимости от режима буферизации                               */
+                    unsigned char *curp   
+                 unsigned       istemp;             /* текущее значение указателя для доступа внутри буфера: задает текущую позицию в буфере для обмена с программой */
+                    short          token;                /* флаг временного файла                                */
+                  } FILE;
+                
+        </pre>
+    </body>
+</html>
